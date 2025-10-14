@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: epay-php
+    volumes:
+      - .:/app
+      - composer-cache:/root/.composer
+    working_dir: /app
+    tty: true
+    stdin_open: true
+
+volumes:
+  composer-cache:
+    driver: local

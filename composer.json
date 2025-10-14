@@ -1,0 +1,37 @@
+{
+    "name": "sakhnovkrg/epay",
+    "description": "Интеграция с Halyk Bank Epay",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "payment",
+        "gateway",
+        "halyk",
+        "homebank",
+        "epay",
+        "kazakhstan",
+        "payment-processing"
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0 || ^11.0",
+        "rector/rector": "^1.0",
+        "vimeo/psalm": "^5.26 || ^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sakhnovkrg\\Epay\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sakhnovkrg\\Epay\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
