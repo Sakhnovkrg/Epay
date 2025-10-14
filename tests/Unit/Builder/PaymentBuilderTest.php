@@ -10,7 +10,6 @@ use Sakhnovkrg\Epay\DTO\AuthToken;
 use Sakhnovkrg\Epay\DTO\PaymentRequest;
 use Sakhnovkrg\Epay\Helper\PaymentHelper;
 use Sakhnovkrg\Epay\Validator\PaymentValidator;
-use Sakhnovkrg\Epay\Widget\WidgetRenderer;
 use Sakhnovkrg\Epay\Exceptions\ValidationException;
 
 class PaymentBuilderTest extends TestCase
@@ -18,7 +17,6 @@ class PaymentBuilderTest extends TestCase
     private EpayConfig $config;
     private OAuthClient $oauthClient;
     private PaymentValidator $validator;
-    private WidgetRenderer $renderer;
     private PaymentBuilder $builder;
 
     protected function setUp(): void
@@ -32,13 +30,11 @@ class PaymentBuilderTest extends TestCase
 
         $this->oauthClient = $this->createMock(OAuthClient::class);
         $this->validator = new PaymentValidator();
-        $this->renderer = new WidgetRenderer($this->config);
 
         $this->builder = new PaymentBuilder(
             $this->config,
             $this->oauthClient,
             $this->validator,
-            $this->renderer,
             'test-secret-hash'
         );
     }
@@ -214,7 +210,6 @@ class PaymentBuilderTest extends TestCase
             $this->config,
             $this->oauthClient,
             $this->validator,
-            $this->renderer,
             'secret-hash-123'
         );
 

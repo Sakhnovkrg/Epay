@@ -33,7 +33,6 @@ class Epay
             $this->config,
             $this->oauthClient,
             $this->validator,
-            $this->renderer,
             $secretHash
         );
     }

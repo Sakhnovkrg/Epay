@@ -1,7 +1,7 @@
 # Halyk Bank Epay
 
 [![Tests](https://github.com/sakhnovkrg/epay/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/sakhnovkrg/epay/actions/workflows/tests.yml)
-[![Coverage](https://img.shields.io/badge/coverage-82.35%25-brightgreen)](https://github.com/sakhnovkrg/epay)
+[![Coverage](https://img.shields.io/badge/coverage-83.85%25-brightgreen)](https://github.com/sakhnovkrg/epay)
 [![Latest Version](https://img.shields.io/packagist/v/sakhnovkrg/epay?label=version&color=blue)](https://packagist.org/packages/sakhnovkrg/epay)
 [![PHP Version](https://img.shields.io/badge/php-8.1%20%7C%208.2%20%7C%208.3%20%7C%208.4-777BB4?logo=php&logoColor=white)](https://packagist.org/packages/sakhnovkrg/epay)
 [![License](https://img.shields.io/packagist/l/sakhnovkrg/epay?color=blue)](https://github.com/sakhnovkrg/epay/blob/main/LICENSE)

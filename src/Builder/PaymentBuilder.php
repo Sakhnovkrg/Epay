@@ -6,7 +6,6 @@ use Sakhnovkrg\Epay\Client\OAuthClient;
 use Sakhnovkrg\Epay\Config\EpayConfig;
 use Sakhnovkrg\Epay\DTO\PaymentRequest;
 use Sakhnovkrg\Epay\Validator\PaymentValidator;
-use Sakhnovkrg\Epay\Widget\WidgetRenderer;
 
 class PaymentBuilder
 {
@@ -32,7 +31,6 @@ class PaymentBuilder
         private readonly EpayConfig $config,
         private readonly OAuthClient $oauthClient,
         private readonly PaymentValidator $validator,
-        private readonly WidgetRenderer $renderer,
         private readonly string $secretHash
     ) {
     }
